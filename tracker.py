@@ -51,7 +51,8 @@ def clear_all_expenses():
     
     else:
         print("Previous data will remain.")
-
+        
+# This function is used when we want to check expense of particular category
 def category():
     choice=input("Enter category whose data you want: ")
     f= open("expense.txt","r")
