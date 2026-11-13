@@ -23,7 +23,8 @@ def add_expense():
         print("Expense saved!\n")
             
     f.close
-    
+
+# This function let you fetch the data from expense.txt and give you output.
 def read_expense():
     try:
         f=open("expense.txt","r")
@@ -41,9 +42,10 @@ def read_expense():
         print("Please add entries!")
     
     f.close()
-    
+
+# The following function will clear all the data from expense.txt
 def clear_all_expenses():
-    option =input("Do you want to clear all the previous data and write new one?(yes/no): ")
+    option =input("Do you want to clear all the previous data and write new one?(yes/no): ") # confirming to delete data
     if option.lower()== "yes":
         with open("expense.txt","w") as f:
             pass
